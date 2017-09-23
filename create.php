@@ -1,8 +1,8 @@
 <?php
 //Login details
-$servername = "mssql6.gear.host";
+$servername = "mysql5.gear.host";
 $username = "sensordata2017";
-$password = "Io98?ai29KM!";
+$password = "Mc090LF!0e~2";
 $dbname = "sensordata2017";
 //Create connection
 $conn = new mysqli("$servername", $username, $password, $dbname);
