@@ -14,10 +14,11 @@ echo "Connected successfully";
 //if(isset($_GET['type'])){
     $date = $_GET['Date'];
     $nh3level = $_GET['ammonialevel'];
+    $o2level = $_GET['oxygenlevel'];
     $waterlevel = $_GET['waterlevel'];
     $location = $_GET['location'];
-    echo "$date $nh3level   $waterlevel  $location";
-    $sql = "INSERT INTO sensordatatable (timestamp, AmmoniaLevel,OxygenLevel, WaterLevel, Location) VALUES ($date, $nh3level  ,  $waterlevel  ,  $location)";
+    echo "$date $nh3level $o2level  $waterlevel  $location";
+    $sql = "INSERT INTO sensordatatable (timestamp, AmmoniaLevel,OxygenLevel, WaterLevel, Location) VALUES ($date, $nh3level, $o2level  ,  $waterlevel  ,  $location)";
     if ($conn->query($sql) === TRUE) {
         echo "You have been registered successfully!";
     } else {
