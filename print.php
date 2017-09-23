@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully";
 echo"Yes";
-$sql = "SELECT * FROM sensorst";
+$sql = "SELECT * FROM sensordatatable";
     $result = mysqli_query($conn ,$sql);
     $array = [];
     
