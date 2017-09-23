@@ -18,7 +18,7 @@ echo "Connected successfully";
     $waterlevel = $_GET['waterlevel'];
     $location = $_GET['location'];
     echo "$date $nh3level $o2level  $waterlevel  $location";
-    $sql = "INSERT INTO sensordatatable (timestamp, AmmoniaLevel,OxygenLevel, WaterLevel, Location) VALUES ($date, $nh3level, $o2level  ,  $waterlevel  ,  $location)";
+    $sql = "INSERT INTO sensordatatable (timestamp, ammonialevel,oxygenlevel, waterlevel, location) VALUES ($date, $nh3level, $o2level  ,  $waterlevel  ,  $location)";
     if ($conn->query($sql) === TRUE) {
         echo "You have been registered successfully!";
     } else {
