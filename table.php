@@ -17,9 +17,9 @@ echo "<title>.::Smart Sewage System::.</title>";
 $sql = "SELECT * FROM sensordatatable";
     $result = mysqli_query($conn ,$sql);
     $array = [];
-    echo "<table><tr><th>Date</th><th>Ammonia Level</th><th>Oxygen Level</th><th>Water Level</th><th>Location</th></tr> ";
+    echo "<table><tr><th>Date</th><th>||</th><th>Ammonia Level</th><th>||</th><th>Oxygen Level</th><th>||</th><th>Water Level</th><th>||</th><th>Location</th></tr> ";
     while($row = $result->fetch_assoc()){
-       echo "<tr><td>$row[timestamp] </td> <td>$row[AmmoniaLevel]</td> <td>$row[OxygenLevel]</td> <td>$row[WaterLevel]</td> <td>$row[Location]</td></tr>";
+       echo "<tr><td>$row[timestamp] </td> <td>||</td> <td>$row[AmmoniaLevel]</td> <td>||</td> <td>$row[OxygenLevel]</td> <td>||</td> <td>$row[WaterLevel]</td> <td>||</td> <td>$row[Location]</td></tr>";
     }
     echo "</table>";
     
