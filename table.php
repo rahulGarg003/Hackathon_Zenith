@@ -19,7 +19,7 @@ $sql = "SELECT * FROM sensordatatable";
     $array = [];
     echo "<table><tr><th>Date</th><th>Ammonia Level</th><th>Oxygen Level</th><th>Water Level</th><th>Location</th></tr> ";
     while($row = $result->fetch_assoc()){
-       echo "<tr><td>$row[timestamp] </td> <td>$row[ammonialevel]</td> <td>$row[oxygenlevel]</td> <td>$row[waterlevel]</td> <td>$row[location]</td></tr>";
+       echo "<tr><td>$row[timestamp] </td> <td>$row[AmmoniaLevel]</td> <td>$row[OxygenLevel]</td> <td>$row[WaterLevel]</td> <td>$row[Location]</td></tr>";
     }
     echo "</table>";
     
