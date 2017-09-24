@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully";
 //Create table query
-$sql = "CREATE TABLE sensordatatable(timestamp Varchar(20),AmmoniaLevel Varchar(20),OxygenLevel Varchar(20),WaterLevel Varchar(8), Location Varchar(50))";
+$sql = "CREATE TABLE sensordatanew(timestamp Varchar(20),AmmoniaLevel Varchar(20),OxygenLevel Varchar(20),WaterLevel Varchar(8), Location Varchar(50))";
 if ($conn->query($sql) === TRUE) {
     echo "Table blogs created successfully!";} 
 else {
