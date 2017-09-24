@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 //echo"Yes";
 echo "<title>.::Smart Sewage System::.</title>";
 //echo "<style type = "text/css">body{margin:0;background-color("green");background-size:cover}</style>";
-$sql = "SELECT * FROM sensordatatable";
+$sql = "SELECT * FROM sensordatanew";
     $result = mysqli_query($conn ,$sql);
     $array = [];
     echo "<table><tr><th>Date</th><th>||</th><th>Ammonia Level</th><th>||</th><th>Oxygen Level</th><th>||</th><th>Water Level</th><th>||</th><th>Location</th></tr> ";
