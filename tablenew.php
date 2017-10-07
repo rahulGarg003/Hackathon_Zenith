@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 //echo "Connected successfully";
 //echo"Yes";
 echo "<title>.::Smart Sewage System::.</title>";
-echo "<body style='background-color:pink'>";
+//echo "<body style='background-color:pink'>";
 $sql = "SELECT * FROM newsensordatatable";
     $result = mysqli_query($conn ,$sql);
     $array = [];
